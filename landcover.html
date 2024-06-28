@@ -40,10 +40,12 @@
 						<h2>Menu</h2>
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="generic.html">Ipsum veroeros</a></li>
-							<li><a href="generic.html">Tempus etiam</a></li>
-							<li><a href="generic.html">Consequat dolor</a></li>
-							<li><a href="elements.html">Elements</a></li>
+							<li><a href="choropleth.html">Chloropleth Map</a></li>
+							<li><a href="vector.html">Vector Operations</a></li>
+							<li><a href="landcover.html">Land Cover Classification</a></li>
+							<li><a href="REM.html">Relative Elevetion Model</a></li>
+							<li><a href="carbon sequestration.html">Carbon Sequestration</a></li>
+							<li><a href="lidar.html">Lidar</a></li>
 						</ul>
 					</nav>
 
@@ -52,12 +54,16 @@
 						<div class="inner">
 							<h1>Land Cover Classification</h1>
 							<p>Land cover classification is crucial for various fields, including environmental monitoring, climate change studies, and agricultural planning. It helps track changes like deforestation and urbanisation, which is essential for managing natural resources and protecting ecosystems. In agriculture, it identifies and monitors crop health, ensuring food security and sustainable practices. Urban planners use it for infrastructure design, growth management, and environmental impact mitigation. It also supports biodiversity conservation by identifying habitats and guiding conservation efforts. Additionally, it aids in disaster management by assessing risk areas, water resource management by understanding watershed characteristics, and policy-making by providing data for land use and environmental protection strategies.</p>
+							<h1>Unsupervised Pixel-Based</h1>
 							<p>I selected the city of Utrecht to analyse and classify land cover using various methods. The first method was unsupervised pixel-based classification, which clusters individual pixels based on spectral information. This method is quick to implement, making it suitable for initial analysis. However, it is susceptible to noise and misclassification, similar to object-based methods, due to its reliance on pixel-level data rather than considering the broader spatial context. </p>
 							<span class="image main"><img src="images/Unsupervised Pixel Based Classification .png" alt="" /></span>
+							<h1>Unsupervised Object-Based</h1>
 							<p>The second method is unsupervised object-based classification, which segments images into objects and clusters them into classes without predefined labels. This approach effectively captures spatial relationships between objects, providing a more contextual understanding of land cover. However, it requires supervision and verification to ensure the accuracy of the classification, as the automated process may still result in errors.</p>
 							<span class="image main"><img src="images/Unsupervised Object Based Classification.png" alt="" /></span>
-							<p>Conversely, supervised pixel-based classification involves using labeled training data to classify pixels. In this method, I selected specific areas and labeled them with the correct land cover type. This approach offers high accuracy but relies heavily on the quality of the trained data, as accurate classification depends on providing the correct information for the algorithm to learn from.</p>
+							<h1>Supervised Pixel-Based</h1>
+							<p>Conversely, supervised pixel-based classification involves using labeled training data to classify pixels. In this method, I selected specific areas and labeled them with the correct land cover type. Green is forest areas, yellow is agricultural areas, grey is urban areas, and blue is water bodies. This approach offers high accuracy but relies heavily on the quality of the trained data, as accurate classification depends on providing the correct information for the algorithm to learn from.</p>
 							<span class="image main"><img src="images/Supervised Pixel Based Classification.png" alt="" /></span>
+							<h1>NDVI</h1>
 							<p>NDVI (Normalized Difference Vegetation Index) evaluates vegetation health by comparing reflectance in the red and near-infrared bands. It measures the difference to assess how much light is absorbed and reflected by vegetation. NDVI values range from -1 to +1, with higher values indicating healthier vegetation. This method is widely used for monitoring vegetation dynamics, detecting drought stress, and assessing land degradation due to its simplicity and effectiveness.</p>
 							<span class="image main"><img src="images/NDVI.png" alt="" /></span>
 						</div>

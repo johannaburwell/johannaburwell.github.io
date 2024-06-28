@@ -40,23 +40,31 @@
 						<h2>Menu</h2>
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="generic.html">Ipsum veroeros</a></li>
-							<li><a href="generic.html">Tempus etiam</a></li>
-							<li><a href="generic.html">Consequat dolor</a></li>
-							<li><a href="elements.html">Elements</a></li>
+							<li><a href="choropleth.html">Chloropleth Map</a></li>
+							<li><a href="vector.html">Vector Operations</a></li>
+							<li><a href="landcover.html">Land Cover Classification</a></li>
+							<li><a href="REM.html">Relative Elevetion Model</a></li>
+							<li><a href="carbon sequestration.html">Carbon Sequestration</a></li>
+							<li><a href="lidar.html">Lidar</a></li>
 						</ul>
 					</nav>
 
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Choropleth</h1>
-							<p>A choropleth map is a type of thematic map where regions are shaded in proportion to the value of a specific variable. It is useful for illustrating how a measurement varies across different geographic areas, making it easier to see regional differences. It clearly displays spatial distribution and regional patterns and is easy for a general audience to understand. It is especially effective for the comparison between different areas on the same variable. However, choropleth maps may be misleading if areas have significant size differences. Furthermore, they may oversimplify complex data so therefore, careful selection of classification intervals is important to prevent misinterpretation.</p>
-							<p>For the comparison of two maps I selected the SDG Indicator 13.1.1, which tracks the number of deaths, missing persons, and those directly affected by disasters per 100,000 population and the SDG 15.1.1, which indicates forest areas a a percentage of total land area. The indicator 13.1.1. highlights the human impact of natural disasters and the effectiveness of disaster risk reduction strategies. I chose this indicator because understanding the effects of disasters is important to mitigate them and especially in the context of climate change this will become more and more important.</p>
+							<h1>Carbon Sequestration</h1>
+							<p>I created the map below on Google Earth Engine. It showcases the Gross Primary Production (GPP) and Aboveground Carbon Density (ACD) across the Galapagos Islands, providing crucial insights into the ecosystem's productivity and carbon storage capabilities.</p>
+					<p>Gross Primary Production (GPP): GPP represents the total amount of carbon dioxide that plants capture from the atmosphere through photosynthesis. This measure is fundamental to understanding an ecosystem’s productivity and its capacity for carbon sequestration. By mapping GPP, we can illustrate carbon sequestration globally and identify areas with high productivity. The mean GPP for the Galapagos Islands is 0.3974923086678371, indicating a moderate rate of carbon capture through photosynthesis across the archipelago.</p>
+					<p>Aboveground Carbon Density (ACD): ACD quantifies the amount of carbon stored aboveground in biomass. This measure is crucial for understanding the existing carbon storage in a specific area. High ACD values indicate regions that are vital to protect, as their destruction would result in significant carbon emissions. The mean ACD for the Galapagos Islands is 5.304858948002961, reflecting a substantial amount of carbon stored in the islands' biomass.</p>
+					<p>Forest Cover (FC): FC refers to the extent, type, and condition of tree cover in an area, encompassing information about the density and health of the vegetation. It helps determine the state of the forest and its potential for future carbon sequestration. For the Galapagos, the forest cover index stands at 15.218744726.</p>
+					<p>Carbon Sequestration Potential Index (CSPI): The CSPI is an index used to evaluate and compare the potential of different forest areas to sequester carbon. By integrating data on GPP, ACD, and FC, the CSPI provides a comprehensive view of areas that can be managed for maximum carbon sequestration. It ranks and compares different regions, assisting in making informed decisions about where to focus restoration and conservation efforts. The CSPI for the Galapagos Islands is 0.06352647114831579, indicating a moderate potential for carbon sequestration compared to other regions.</p>
+					<p>To create the map, I imported a custom GeoJSON geodata file that outlined the main islands of the Galapagos into Google Earth Engine. By downloading the GeoTIFF of the corresponding coordinates and overlaying them in Google Earth Engine, I developed the layers for GPP and ACD. This process enabled the detailed analysis and visualization of carbon dynamics across the Galapagos Islands.</p>
+					<p>Surprisingly, the Galapagos Islands did not rank especially high in all the measured values, with both Gross Primary Production (GPP) and Aboveground Carbon Density (ACD) being relatively low despite the islands' status as an important conservation area. This can be attributed to the islands' geography, as the satellite image reveals four large volcanoes with limited vegetation density, which may explain the decreased production. Despite these moderate values, the Galapagos remain a critical conservation site due to their unique biodiversity and ecological significance, providing essential habitats for many endemic species and offering insights into evolutionary processes.</p>
 							<p></p>
-								<iframe src="https://uni-utrecht.maps.arcgis.com/apps/Compare/index.html?appid=d9889d0c27a1400eb915b5f59dda025c" width="100%" height="800px" frameborder="0" style="border:0"
+								<iframe src="https://ee-johannaburwell.projects.earthengine.app/view/carbonsequestrationgalapagos" width="100%" height="800px" frameborder="0" style="border:0"
 								</div>
 					</div>
+
 
 				<!-- Footer -->
 					<footer id="footer">
